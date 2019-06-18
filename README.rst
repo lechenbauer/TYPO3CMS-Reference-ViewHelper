@@ -1,11 +1,9 @@
-\|
-`Contributing <CONTRIBUTING.rst>`__  \|
-`Help & Support <https://typo3.org/help>`__ \|
-`Settings <Documentation/Settings.cfg>`__ \|
-
 ====================
 ViewHelper Reference
 ====================
 
-:Repository:  https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-ViewHelper
 :Read online: https://docs.typo3.org/typo3cms/ViewHelperReference/
+
+:Repository for Fluid: https://github.com/TYPO3/Fluid
+:Repository for TYPO3: https://github.com/TYPO3/TYPO3.CMS (mirror)
+:Repository for generated VH reference:  https://github.com/TYPO3-Documentation/TYPO3CMS-Reference-ViewHelper
