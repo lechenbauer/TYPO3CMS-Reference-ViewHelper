@@ -1,0 +1,76 @@
+.. include:: ../../../../Includes.txt
+
+.. _typo3-fluid-format-number:
+
+=============
+format.number
+=============
+
+
+Formats a number with custom precision, decimal point and grouped thousands.
+
+
+= Examples =
+
+<code title="Defaults">
+<f:format.number>423423.234</f:format.number>
+</code>
+<output>
+423,423.20
+</output>
+
+<code title="With all parameters">
+<f:format.number decimals="1" decimalSeparator="," thousandsSeparator=".">423423.234</f:format.number>
+</code>
+<output>
+423.423,2
+</output>
+
+Arguments
+=========
+
+
+.. _format.number_decimals:
+decimals
+--------
+
+:aspect:`DataType`
+   mixed
+
+:aspect:`Default`
+   '2'
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   The number of digits after the decimal point
+
+.. _format.number_decimalseparator:
+decimalSeparator
+----------------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Default`
+   '.'
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   The decimal point character
+
+.. _format.number_thousandsseparator:
+thousandsSeparator
+------------------
+
+:aspect:`DataType`
+   string
+
+:aspect:`Default`
+   ','
+
+:aspect:`Required`
+   true
+:aspect:`Description`
+   The character for grouping the thousand digits

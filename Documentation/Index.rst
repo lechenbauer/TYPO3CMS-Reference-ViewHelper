@@ -13,7 +13,7 @@ This documentation is generated from PHP Source code of TYPO3 CMS.
 
 .. note::
 
-   This is a first draft, updated manually.
+   This reference is created and updated manually.
 
 Current plans are to automate the rendering and to update the source code to
 provide a fully useful reference of all provided ViewHelpers by TYPO3 CMS.
@@ -38,6 +38,12 @@ You can do that by using "Edit me on GitHub" on the corresponding source file.
 * Repository for Fluid: https://github.com/TYPO3/Fluid (for all `typo3fluid/` ViewHelpers)
 * Repository for TYPO3 (mirror): https://github.com/TYPO3/TYPO3.CMS (for all `typo3/` ViewHelpers)
 
+.. note::
+
+   This reference contains all ViewHelpers provided by the TYPO3 core, but most of them are not considered public API.
+   If you look for a ViewHelper to use with your own project, use only available from ext:backend, ext:fluid or the standalone fluid package.
+   It is recommended to develop own ViewHelpers, implementing one of the AbstractViewHelper classes from the TYPO3Fluid namespace, when you need special handling.
+
 
 The ViewHelpers are in:
 
@@ -54,9 +60,21 @@ Content
 .. toctree::
    :titlesonly:
 
-   typo3/backend/9.5/Index
-   typo3/core/9.5/Index
-   typo3/fluid/9.5/Index
-   typo3/form/9.5/Index
-   typo3/indexed_search/9.5/Index
-   typo3fluid/fluid/2.5.4/Index
+   typo3/backend/TYPO3_8-7/Index
+   typo3/belog/TYPO3_8-7/Index
+   typo3/beuser/TYPO3_8-7/Index
+   typo3/core/TYPO3_8-7/Index
+   typo3/cshmanual/TYPO3_8-7/Index
+   typo3/css_styled_content/TYPO3_8-7/Index
+   typo3/documentation/TYPO3_8-7/Index
+   typo3/extensionmanager/TYPO3_8-7/Index
+   typo3/filelist/TYPO3_8-7/Index
+   typo3/fluid/TYPO3_8-7/Index
+   typo3/fluid_styled_content/TYPO3_8-7/Index
+   typo3/form/TYPO3_8-7/Index
+   typo3/indexed_search/TYPO3_8-7/Index
+   typo3/install/TYPO3_8-7/Index
+   typo3/reports/TYPO3_8-7/Index
+   typo3/scheduler/TYPO3_8-7/Index
+   typo3/sys_note/TYPO3_8-7/Index
+   typo3fluid/fluid/2.5.5/Index

@@ -21,5 +21,3 @@ The ViewHelpers are in:
    * `typo3/backend`: `typo3/sysext/backend/Classes/ViewHelpers <https://github.com/TYPO3/TYPO3.CMS/tree/master/typo3/sysext/backend/Classes/ViewHelpers>`__
    * `typo3/core`: `typo3/sysext/core/Classes/ViewHelpers <https://github.com/TYPO3/TYPO3.CMS/tree/master/typo3/sysext/core/Classes/ViewHelpers>`__
    * `typo3/fluid`: `typo3/sysext/fluid/Classes/ViewHelpers <https://github.com/TYPO3/TYPO3.CMS/tree/master/typo3/sysext/fluid/Classes/ViewHelpers>`__
-
-
