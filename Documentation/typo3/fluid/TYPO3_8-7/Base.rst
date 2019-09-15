@@ -11,15 +11,18 @@ View helper which creates a <base href="..."></base> tag. The Base URI is taken 
 current request.
 In TYPO3 Flow, you should always include this ViewHelper to make the links work.
 
-= Examples =
+Examples
+========
 
-<code title="Example">
-<f:base />
-</code>
-<output>
-<base href="http://yourdomain.tld/" />
+Example::
+
+   <f:base />
+
+Output::
+
+   <base href="http://yourdomain.tld/" />
+
 (depending on your domain)
-</output>
 
 Arguments
 =========

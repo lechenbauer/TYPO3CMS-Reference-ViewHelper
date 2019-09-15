@@ -10,28 +10,32 @@ cObject
 This ViewHelper renders CObjects from the global TypoScript configuration.
 NOTE: You have to ensure proper escaping (htmlspecialchars/intval/etc.) on your own!
 
-= Examples =
+Examples
+========
 
-<code title="Render lib object">
-<f:cObject typoscriptObjectPath="lib.someLibObject" />
-</code>
-<output>
-rendered lib.someLibObject
-</output>
+Render lib object::
 
-<code title="Specify cObject data & current value">
-<f:cObject typoscriptObjectPath="lib.customHeader" data="{article}" currentValueKey="title" />
-</code>
-<output>
-rendered lib.customHeader. data and current value will be available in TypoScript
-</output>
+   <f:cObject typoscriptObjectPath="lib.someLibObject" />
 
-<code title="inline notation">
-{article -> f:cObject(typoscriptObjectPath: 'lib.customHeader')}
-</code>
-<output>
-rendered lib.customHeader. data will be available in TypoScript
-</output>
+Output::
+
+   rendered lib.someLibObject
+
+Specify cObject data & current value::
+
+   <f:cObject typoscriptObjectPath="lib.customHeader" data="{article}" currentValueKey="title" />
+
+Output::
+
+   rendered lib.customHeader. data and current value will be available in TypoScript
+
+inline notation::
+
+   {article -> f:cObject(typoscriptObjectPath: 'lib.customHeader')}
+
+Output::
+
+   rendered lib.customHeader. data will be available in TypoScript
 
 Arguments
 =========

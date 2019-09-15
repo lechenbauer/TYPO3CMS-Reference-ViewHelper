@@ -34,16 +34,17 @@ USE WITH CARE! SOME EDGE CASES OF FOR EXAMPLE VIEWHELPERS
 WHICH REQUIRE SPECIAL VARIABLE TYPES MAY NOT BE SUPPORTED
 HERE DUE TO THE RUDIMENTARY NATURE OF VARIABLES YOU DEFINE.
 
-= Examples =
+Examples
+========
 
-<code title="Usage and effect">
-<f:cache.warmup variables="{foo: bar}">
-   Template code depending on {foo} variable which is not
-   assigned when warming up Fluid's caches. {foo} is only
-   assigned if the variable does not already exist and the
-   assignment only happens if Fluid is in warmup mode.
-</f:cache.warmup>
-</code>
+Usage and effect::
+
+   <f:cache.warmup variables="{foo: bar}">
+      Template code depending on {foo} variable which is not
+      assigned when warming up Fluid's caches. {foo} is only
+      assigned if the variable does not already exist and the
+      assignment only happens if Fluid is in warmup mode.
+   </f:cache.warmup>
 
 Arguments
 =========

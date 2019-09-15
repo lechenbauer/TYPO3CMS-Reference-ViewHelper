@@ -9,14 +9,16 @@ form.textfield
 
 View Helper which creates a text field (<input type="text">).
 
-= Examples =
+Examples
+========
 
-<code title="Example">
-<f:form.textfield name="myTextBox" value="default value" />
-</code>
-<output>
-<input type="text" name="myTextBox" value="default value" />
-</output>
+Example::
+
+   <f:form.textfield name="myTextBox" value="default value" />
+
+Output::
+
+   <input type="text" name="myTextBox" value="default value" />
 
 Arguments
 =========

@@ -13,30 +13,10 @@ This documentation is generated from PHP Source code of TYPO3 CMS.
 
 .. note::
 
-   This reference is created and updated manually.
-
-Current plans are to automate the rendering and to update the source code to
-provide a fully useful reference of all provided ViewHelpers by TYPO3 CMS.
-
-Right now this might look ugly in some places, e.g. ``= EXAMPLE =`` and rendered
-HTML markup like ``<code>``. This will be polished in the future.  The current
-state still is much better then nothing.
+   This reference is one time generated for Version 8.7.
 
 Also notice that package names are not 1:1 Composer packages. ``cms-`` is
 stripped.
-
-Contribute
-----------
-
-This documentation is automatically generated from the comments in the source code
-of TYPO3 and Fluid.
-
-If you wish to make a change, you must do it in the PHP source.
-
-You can do that by using "Edit me on GitHub" on the corresponding source file.
-
-* Repository for Fluid: https://github.com/TYPO3/Fluid (for all `typo3fluid/` ViewHelpers)
-* Repository for TYPO3 (mirror): https://github.com/TYPO3/TYPO3.CMS (for all `typo3/` ViewHelpers)
 
 .. note::
 

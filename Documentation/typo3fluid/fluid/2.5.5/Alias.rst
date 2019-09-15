@@ -13,24 +13,27 @@ Takes a "map"-Parameter which is an associative array which defines the shorthan
 The variables are only declared inside the <f:alias>...</f:alias>-tag. After the
 closing tag, all declared variables are removed again.
 
-= Examples =
+Examples
+========
 
-<code title="Single alias">
-<f:alias map="{x: 'foo'}">{x}</f:alias>
-</code>
-<output>
-foo
-</output>
+Single alias::
 
-<code title="Multiple mappings">
-<f:alias map="{x: foo.bar.baz, y: foo.bar.baz.name}">
-  {x.name} or {y}
-</f:alias>
-</code>
-<output>
-[name] or [name]
-depending on {foo.bar.baz}
-</output>
+   <f:alias map="{x: 'foo'}">{x}</f:alias>
+
+Output::
+
+   foo
+
+Multiple mappings::
+
+   <f:alias map="{x: foo.bar.baz, y: foo.bar.baz.name}">
+   {x.name} or {y}
+   </f:alias>
+
+Output::
+
+   [name] or [name]
+   depending on {foo.bar.baz}
 
 Note: Using this view helper can be a sign of weak architecture. If you end up using it extensively
 you might want to fine-tune your "view model" (the data you assign to the view).

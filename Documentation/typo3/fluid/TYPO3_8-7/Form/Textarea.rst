@@ -10,14 +10,16 @@ form.textarea
 Textarea view helper.
 The value of the text area needs to be set via the "value" attribute, as with all other form ViewHelpers.
 
-= Examples =
+Examples
+========
 
-<code title="Example">
-<f:form.textarea name="myTextArea" value="This is shown inside the textarea" />
-</code>
-<output>
-<textarea name="myTextArea">This is shown inside the textarea</textarea>
-</output>
+Example::
+
+   <f:form.textarea name="myTextArea" value="This is shown inside the textarea" />
+
+Output::
+
+   <textarea name="myTextArea">This is shown inside the textarea</textarea>
 
 Arguments
 =========

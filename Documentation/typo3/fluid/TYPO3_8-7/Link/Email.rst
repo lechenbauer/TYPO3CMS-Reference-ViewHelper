@@ -10,21 +10,6 @@ link.email
 Email link view helper.
 Generates an email link incorporating TYPO3s spamProtectEmailAddresses-settings.
 
-= Examples
-
-<code title="basic email link">
-</code>
-<output>
-<a href="javascript:linkTo_UnCryptMailto('ocknvq,hqqBdct0vnf');">foo(at)bar.tld</a>
-(depending on your spamProtectEmailAddresses-settings)
-</output>
-
-<code title="Email link with custom linktext">
-</code>
-<output>
-<a href="javascript:linkTo_UnCryptMailto('ocknvq,hqqBdct0vnf');">some custom content</a>
-</output>
-
 Arguments
 =========
 

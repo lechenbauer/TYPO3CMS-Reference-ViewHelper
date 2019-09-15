@@ -9,14 +9,16 @@ file.size
 
 Get file size from file
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<f:file.size>/var/www/typo3/instance/typo3temp/foo.jpg</f:file.size>
-</code>
-<output>
-1,2k
-</output>
+Defaults::
+
+   <f:file.size>/var/www/typo3/instance/typo3temp/foo.jpg</f:file.size>
+
+Output::
+
+   1,2k
 
 Arguments
 =========

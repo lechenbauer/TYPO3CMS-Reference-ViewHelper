@@ -9,14 +9,16 @@ uri.action
 
 A view helper for creating URIs to install tool actions.
 
-= Examples =
+Examples
+========
 
-<code title="URI to the show-action of the current controller">
-<f:uri.action action="importantActions" />
-</code>
-<output>
-install.php?install[action]=importantActions&amp;install[context]=
-</output>
+URI to the show-action of the current controller::
+
+   <f:uri.action action="importantActions" />
+
+Output::
+
+   install.php?install[action]=importantActions&amp;install[context]=
 
 Arguments
 =========

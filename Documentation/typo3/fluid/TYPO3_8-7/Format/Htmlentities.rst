@@ -9,21 +9,24 @@ format.htmlentities
 
 Applies htmlentities() escaping to a value
 
-= Examples =
+Examples
+========
 
-<code title="default notation">
-<f:format.htmlentities>{text}</f:format.htmlentities>
-</code>
-<output>
-Text with & " ' < > * replaced by HTML entities (htmlentities applied).
-</output>
+default notation::
 
-<code title="inline notation">
-{text -> f:format.htmlentities(encoding: 'ISO-8859-1')}
-</code>
-<output>
-Text with & " ' < > * replaced by HTML entities (htmlentities applied).
-</output>
+   <f:format.htmlentities>{text}</f:format.htmlentities>
+
+Output::
+
+   Text with & " ' < > * replaced by HTML entities (htmlentities applied).
+
+inline notation::
+
+   {text -> f:format.htmlentities(encoding: 'ISO-8859-1')}
+
+Output::
+
+   Text with & " ' < > * replaced by HTML entities (htmlentities applied).
 
 Arguments
 =========

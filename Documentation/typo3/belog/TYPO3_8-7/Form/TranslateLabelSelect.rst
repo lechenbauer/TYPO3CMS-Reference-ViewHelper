@@ -10,8 +10,9 @@ form.translateLabelSelect
 Extends the usual select view helper, but additionally translates
 the select option labels
 
-Example:
-<belog:form.translateLabelSelect property="number" options="{settings.selectableNumberOfLogEntries}" optionLabelPrefix="numbers"
+Example::
+
+   <belog:form.translateLabelSelect property="number" options="{settings.selectableNumberOfLogEntries}" optionLabelPrefix="numbers"
 
 Will lookup number.200 (or whatever optionValue is given) in locallang database
 

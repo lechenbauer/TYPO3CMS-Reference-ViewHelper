@@ -10,18 +10,20 @@ switch
 Switch view helper which can be used to render content depending on a value or expression.
 Implements what a basic switch()-PHP-method does.
 
-= Examples =
+Examples
+========
 
-<code title="Simple Switch statement">
-<f:switch expression="{person.gender}">
-  <f:case value="male">Mr.</f:case>
-  <f:case value="female">Mrs.</f:case>
-  <f:defaultCase>Mrs. or Mr.</f:defaultCase>
-</f:switch>
-</code>
-<output>
-Mr. / Mrs. (depending on the value of {person.gender}) or if no value evaluates to TRUE, defaultCase
-</output>
+Simple Switch statement::
+
+   <f:switch expression="{person.gender}">
+      <f:case value="male">Mr.</f:case>
+      <f:case value="female">Mrs.</f:case>
+      <f:defaultCase>Mrs. or Mr.</f:defaultCase>
+   </f:switch>
+
+Output::
+
+   Mr. / Mrs. (depending on the value of {person.gender}) or if no value evaluates to TRUE, defaultCase
 
 Note: Using this view helper can be a sign of weak architecture. If you end up using it extensively
 you might want to consider restructuring your controllers/actions and/or use partials and sections.

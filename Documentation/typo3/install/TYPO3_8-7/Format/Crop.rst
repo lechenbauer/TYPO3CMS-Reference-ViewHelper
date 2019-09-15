@@ -9,22 +9,26 @@ format.crop
 
 Simplified crop view helper that does not need a frontend environment
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<f:format.crop maxCharacters="10">This is some very long text</f:format.crop>
-</code>
-<output>
-This is...
-</output>
+Defaults::
 
-<code title="Inline notation">
-{someLongText -> f:format.crop(maxCharacters: 10)}
-</code>
-<output>
-someLongText cropped after 10 characters...
+   <f:format.crop maxCharacters="10">This is some very long text</f:format.crop>
+
+Output::
+
+   This is...
+
+Inline notation::
+
+   {someLongText -> f:format.crop(maxCharacters: 10)}
+
+Output::
+
+   someLongText cropped after 10 characters...
+
 (depending on the value of {someLongText})
-</output>
 
 Arguments
 =========

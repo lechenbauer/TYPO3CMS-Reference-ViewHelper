@@ -12,18 +12,20 @@ Implements what a basic switch()-PHP-method does.
 
 An optional default case can be specified which is rendered if none of the "f:case" conditions matches.
 
-= Examples =
+Examples
+========
 
-<code title="Simple Switch statement">
-<f:switch expression="{person.gender}">
-  <f:case value="male">Mr.</f:case>
-  <f:case value="female">Mrs.</f:case>
-  <f:defaultCase>Mr. / Mrs.</f:defaultCase>
-</f:switch>
-</code>
-<output>
-"Mr.", "Mrs." or "Mr. / Mrs." (depending on the value of {person.gender})
-</output>
+Simple Switch statement::
+
+   <f:switch expression="{person.gender}">
+      <f:case value="male">Mr.</f:case>
+      <f:case value="female">Mrs.</f:case>
+      <f:defaultCase>Mr. / Mrs.</f:defaultCase>
+   </f:switch>
+
+Output::
+
+   "Mr.", "Mrs." or "Mr. / Mrs." (depending on the value of {person.gender})
 
 Note: Using this view helper can be a sign of weak architecture. If you end up using it extensively
 you might want to consider restructuring your controllers/actions and/or use partials and sections.

@@ -15,21 +15,21 @@ tags. Trims the final result before output.
 
 Heavily inspired by Twig's corresponding node type.
 
-<code title="Usage of f:spaceless">
-<f:spaceless>
-<div>
-    <div>
-        <div>text
+Usage of f:spaceless::
 
-text</div>
-    </div>
-</div>
-</code>
-<output>
-<div><div><div>text
+   <f:spaceless>
+   <div>
+      <div>
+         <div>text
 
-text</div></div></div>
-</output>
+   text</div>
+      </div>
+   </div>
+Output::
+
+   <div><div><div>text
+
+   text</div></div></div>
 
 Arguments
 =========

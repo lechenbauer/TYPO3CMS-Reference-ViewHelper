@@ -12,21 +12,24 @@ Note: The CSH button will only work, if the current BE user has the "Context Sen
 set to something else than "Display no help information" in the Users settings
 Note: This view helper is experimental!
 
-= Examples =
+Examples
+========
 
-<code title="Default">
-<f:be.buttons.csh />
-</code>
-<output>
-CSH button as known from the TYPO3 backend.
-</output>
+Default::
 
-<code title="Full configuration">
-<f:be.buttons.csh table="xMOD_csh_corebe" field="someCshKey" />
-</code>
-<output>
-CSH button as known from the TYPO3 backend with some custom settings.
-</output>
+   <f:be.buttons.csh />
+
+Output::
+
+   CSH button as known from the TYPO3 backend.
+
+Full configuration::
+
+   <f:be.buttons.csh table="xMOD_csh_corebe" field="someCshKey" />
+
+Output::
+
+   CSH button as known from the TYPO3 backend with some custom settings.
 
 Arguments
 =========

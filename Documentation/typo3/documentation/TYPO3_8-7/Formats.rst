@@ -9,7 +9,9 @@ formats
 
 ViewHelper to display all download links for a document
 
-Example: <doc:formats document="{document}" />
+Example::
+
+   <doc:formats document="{document}" />
 
 Arguments
 =========

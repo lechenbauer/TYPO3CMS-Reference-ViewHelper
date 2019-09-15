@@ -9,23 +9,25 @@ widget.paginate
 
 This ViewHelper renders a Pagination of objects.
 
-= Examples =
+Examples
+========
 
-<code title="required arguments">
-<f:widget.paginate objects="{blogs}" as="paginatedBlogs">
-use {paginatedBlogs} as you used {blogs} before, most certainly inside
-a <f:for> loop.
-</f:widget.paginate>
-</code>
+required arguments::
 
-<code title="full configuration">
-<f:widget.paginate objects="{blogs}" as="paginatedBlogs" configuration="{itemsPerPage: 5, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
-use {paginatedBlogs} as you used {blogs} before, most certainly inside
-a <f:for> loop.
-</f:widget.paginate>
-</code>
+   <f:widget.paginate objects="{blogs}" as="paginatedBlogs">
+   use {paginatedBlogs} as you used {blogs} before, most certainly inside
+   a <f:for> loop.
+   </f:widget.paginate>
 
-= Performance characteristics =
+full configuration::
+
+   <f:widget.paginate objects="{blogs}" as="paginatedBlogs" configuration="{itemsPerPage: 5, insertAbove: 1, insertBelow: 0, maximumNumberOfLinks: 10}">
+   use {paginatedBlogs} as you used {blogs} before, most certainly inside
+   a <f:for> loop.
+   </f:widget.paginate>
+
+Performance characteristics
+===========================
 
 In the above examples, it looks like {blogs} contains all Blog objects, thus
 you might wonder if all objects were fetched from the database.
