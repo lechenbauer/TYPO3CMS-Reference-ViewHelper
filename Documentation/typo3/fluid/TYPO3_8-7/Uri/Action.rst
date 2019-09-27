@@ -9,15 +9,18 @@ uri.action
 
 A view helper for creating URIs to extbase actions.
 
-= Examples =
+Examples
+========
 
-<code title="URI to the show-action of the current controller">
-<f:uri.action action="show" />
-</code>
-<output>
-index.php?id=123&tx_myextension_plugin[action]=show&tx_myextension_plugin[controller]=Standard&cHash=xyz
+URI to the show-action of the current controller::
+
+   <f:uri.action action="show" />
+
+Output::
+
+   index.php?id=123&tx_myextension_plugin[action]=show&tx_myextension_plugin[controller]=Standard&cHash=xyz
+
 (depending on the current page and your TS configuration)
-</output>
 
 Arguments
 =========

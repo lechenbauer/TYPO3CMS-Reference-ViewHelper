@@ -9,29 +9,34 @@ format.json
 
 Wrapper for PHPs json_encode function.
 
-= Examples =
+Examples
+========
 
-<code title="encoding a view variable">
-{someArray -> f:format.json()}
-</code>
-<output>
-["array","values"]
-// depending on the value of {someArray}
-</output>
+encoding a view variable::
 
-<code title="associative array">
-{f:format.json(value: {foo: 'bar', bar: 'baz'})}
-</code>
-<output>
-{"foo":"bar","bar":"baz"}
-</output>
+   {someArray -> f:format.json()}
 
-<code title="non-associative array with forced object">
-{f:format.json(value: {0: 'bar', 1: 'baz'}, forceObject: true)}
-</code>
-<output>
-{"0":"bar","1":"baz"}
-</output>
+Output::
+
+   ["array","values"]
+
+depending on the value of {someArray}
+
+associative array::
+
+   {f:format.json(value: {foo: 'bar', bar: 'baz'})}
+
+Output::
+
+   {"foo":"bar","bar":"baz"}
+
+non-associative array with forced object::
+
+   {f:format.json(value: {0: 'bar', 1: 'baz'}, forceObject: true)}
+
+Output::
+
+   {"0":"bar","1":"baz"}
 
 Arguments
 =========

@@ -9,14 +9,16 @@ file.imageDimension
 
 Get width or height from image file
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<f:file.imageDimension>/var/www/typo3/instance/typo3temp/foo.jpg</f:file.size>
-</code>
-<output>
-170
-</output>
+Defaults::
+
+   <f:file.imageDimension>/var/www/typo3/instance/typo3temp/foo.jpg</f:file.size>
+
+Output::
+
+   170
 
 Arguments
 =========

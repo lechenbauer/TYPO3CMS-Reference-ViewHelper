@@ -12,20 +12,23 @@ $fallbackImage is given check if that file exists and render img tag.
 
 If no existing file is found no tag is rendered.
 
-= Examples =
+Examples
+========
 
-<code title="Default">
-    <em:image src="EXT:myext/Resources/Public/typo3_logo.png" alt="alt text" />
-</code>
-<output>
-    <img alt="alt text" src="../typo3conf/ext/myext/Resources/Public/typo3_logo.png" />
-</output>
+Default::
 
-<code title="non existing image">
-    <f:image src="NonExistingImage.png" alt="foo" />
-</code>
-<output>
-</output>
+      <em:image src="EXT:myext/Resources/Public/typo3_logo.png" alt="alt text" />
+
+Output::
+
+      <img alt="alt text" src="../typo3conf/ext/myext/Resources/Public/typo3_logo.png" />
+
+non existing image::
+
+      <f:image src="NonExistingImage.png" alt="foo" />
+
+Output::
+
 
 Arguments
 =========

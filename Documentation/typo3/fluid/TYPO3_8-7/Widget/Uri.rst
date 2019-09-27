@@ -9,15 +9,18 @@ widget.uri
 
 A view helper for creating URIs to extbase actions within widgets.
 
-= Examples =
+Examples
+========
 
-<code title="URI to the show-action of the current controller">
-<f:widget.uri action="show" />
-</code>
-<output>
-index.php?id=123&tx_myextension_plugin[widgetIdentifier][action]=show&tx_myextension_plugin[widgetIdentifier][controller]=Standard&cHash=xyz
+URI to the show-action of the current controller::
+
+   <f:widget.uri action="show" />
+
+Output::
+
+   index.php?id=123&tx_myextension_plugin[widgetIdentifier][action]=show&tx_myextension_plugin[widgetIdentifier][controller]=Standard&cHash=xyz
+
 (depending on the current page, widget and your TS configuration)
-</output>
 
 Arguments
 =========

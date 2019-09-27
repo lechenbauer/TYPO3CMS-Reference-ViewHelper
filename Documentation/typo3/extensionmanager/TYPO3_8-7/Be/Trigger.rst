@@ -10,14 +10,16 @@ be.trigger
 Special view helper for the BE module of the Extension Manager. Loads JS code for triggering
 refresh events.
 
-= Examples =
+Examples
+========
 
-<code title="Simple">
-<em:be.container triggers="{triggers}" />
-</code>
-<output>
-Writes some JS inline code
-</output>
+Simple::
+
+   <em:be.container triggers="{triggers}" />
+
+Output::
+
+   Writes some JS inline code
 
 Arguments
 =========

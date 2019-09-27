@@ -9,14 +9,14 @@ layout
 
 With this tag, you can select a layout to be used for the current template.
 
-= Examples =
+Examples
+========
 
-<code>
-<f:layout name="main" />
-</code>
-<output>
+::
+
+   <f:layout name="main" />
+
 (no output)
-</output>
 
 Arguments
 =========

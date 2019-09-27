@@ -9,29 +9,33 @@ format.currency
 
 Formats a given float to a currency representation.
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<f:format.currency>123.456</f:format.currency>
-</code>
-<output>
-123,46
-</output>
+Defaults::
 
-<code title="All parameters">
-<f:format.currency currencySign="$" decimalSeparator="." thousandsSeparator="," prependCurrency="true" separateCurrency="false" decimals="2">54321</f:format.currency>
-</code>
-<output>
-$54,321.00
-</output>
+   <f:format.currency>123.456</f:format.currency>
 
-<code title="Inline notation">
-{someNumber -> f:format.currency(thousandsSeparator: ',', currencySign: '')}
-</code>
-<output>
-54,321,00
+Output::
+
+   123,46
+
+All parameters::
+
+   <f:format.currency currencySign="$" decimalSeparator="." thousandsSeparator="," prependCurrency="true" separateCurrency="false" decimals="2">54321</f:format.currency>
+
+Output::
+
+   $54,321.00
+
+Inline notation::
+
+   {someNumber -> f:format.currency(thousandsSeparator: ',', currencySign: '')}
+
+Output::
+
+   54,321,00
 (depending on the value of {someNumber})
-</output>
 
 Arguments
 =========

@@ -10,21 +10,24 @@ format.stripTags
 Removes tags from the given string (applying PHPs strip_tags() function)
 
 
-= Examples =
+Examples
+========
 
-<code title="default notation">
-<f:format.stripTags>Some Text with <b>Tags</b> and an &Uuml;mlaut.</f:format.stripTags>
-</code>
-<output>
-Some Text with Tags and an &Uuml;mlaut. (strip_tags() applied. Note: encoded entities are not decoded)
-</output>
+default notation::
 
-<code title="inline notation">
-{text -> f:format.stripTags()}
-</code>
-<output>
-Text without tags (strip_tags() applied)
-</output>
+   <f:format.stripTags>Some Text with <b>Tags</b> and an &Uuml;mlaut.</f:format.stripTags>
+
+Output::
+
+   Some Text with Tags and an &Uuml;mlaut. (strip_tags() applied. Note: encoded entities are not decoded)
+
+inline notation::
+
+   {text -> f:format.stripTags()}
+
+Output::
+
+   Text without tags (strip_tags() applied)
 
 Arguments
 =========

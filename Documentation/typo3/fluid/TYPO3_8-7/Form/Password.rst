@@ -9,14 +9,16 @@ form.password
 
 View Helper which creates a simple Password Text Box (<input type="password">).
 
-= Examples =
+Examples
+========
 
-<code title="Example">
-<f:form.password name="myPassword" />
-</code>
-<output>
-<input type="password" name="myPassword" value="default value" />
-</output>
+Example::
+
+   <f:form.password name="myPassword" />
+
+Output::
+
+   <input type="password" name="myPassword" value="default value" />
 
 Arguments
 =========

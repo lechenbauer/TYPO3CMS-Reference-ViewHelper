@@ -9,15 +9,16 @@ link.clickEnlarge
 
 A view helper for creating a link for an image popup.
 
-= Example =
+Example
+=======
 
-<code title="enlarge image on click">
-<ce:link.clickEnlarge image="{image}" configuration="{settings.images.popup}"><img src=""></ce:link.clickEnlarge>
-</code>
+enlarge image on click::
 
-<output>
-<a href="url" onclick="javascript" target="thePicture"><img src=""></a>
-</output>
+   <ce:link.clickEnlarge image="{image}" configuration="{settings.images.popup}"><img src=""></ce:link.clickEnlarge>
+
+Output::
+
+   <a href="url" onclick="javascript" target="thePicture"><img src=""></a>
 
 Arguments
 =========

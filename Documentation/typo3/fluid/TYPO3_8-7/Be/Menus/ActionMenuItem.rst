@@ -11,28 +11,31 @@ View helper which returns an option tag.
 This view helper only works in conjunction with \TYPO3\CMS\Fluid\ViewHelpers\Be\Menus\ActionMenuViewHelper
 Note: This view helper is experimental!
 
-= Examples =
+Examples
+========
 
-<code title="Simple">
-<f:be.menus.actionMenu>
-<f:be.menus.actionMenuItem label="Overview" controller="Blog" action="index" />
-<f:be.menus.actionMenuItem label="Create new Blog" controller="Blog" action="new" />
-<f:be.menus.actionMenuItem label="List Posts" controller="Post" action="index" arguments="{blog: blog}" />
-</f:be.menus.actionMenu>
-</code>
-<output>
-Selectbox with the options "Overview", "Create new Blog" and "List Posts"
-</output>
+Simple::
 
-<code title="Localized">
-<f:be.menus.actionMenu>
-<f:be.menus.actionMenuItem label="{f:translate(key='overview')}" controller="Blog" action="index" />
-<f:be.menus.actionMenuItem label="{f:translate(key='create_blog')}" controller="Blog" action="new" />
-</f:be.menus.actionMenu>
-</code>
-<output>
-localized selectbox
-<output>
+   <f:be.menus.actionMenu>
+      <f:be.menus.actionMenuItem label="Overview" controller="Blog" action="index" />
+      <f:be.menus.actionMenuItem label="Create new Blog" controller="Blog" action="new" />
+      <f:be.menus.actionMenuItem label="List Posts" controller="Post" action="index" arguments="{blog: blog}" />
+   </f:be.menus.actionMenu>
+
+Output::
+
+   Selectbox with the options "Overview", "Create new Blog" and "List Posts"
+
+Localized::
+
+   <f:be.menus.actionMenu>
+      <f:be.menus.actionMenuItem label="{f:translate(key='overview')}" controller="Blog" action="index" />
+      <f:be.menus.actionMenuItem label="{f:translate(key='create_blog')}" controller="Blog" action="new" />
+   </f:be.menus.actionMenu>
+
+Output::
+
+   localized selectbox
 
 Arguments
 =========

@@ -10,25 +10,29 @@ be.buttons.shortcut
 View helper which returns shortcut button with icon
 Note: This view helper is experimental!
 
-= Examples =
+Examples
+========
 
-<code title="Default">
-<f:be.buttons.shortcut />
-</code>
-<output>
-Shortcut button as known from the TYPO3 backend.
-By default the current page id, module name and all module arguments will be stored
-</output>
+Default::
 
-<code title="Explicitly set parameters to be stored in the shortcut">
-<f:be.buttons.shortcut getVars="{0: 'M', 1: 'myOwnPrefix'}" setVars="{0: 'function'}" />
-</code>
-<output>
-Shortcut button as known from the TYPO3 backend.
-This time only the specified GET parameters and SET[]-settings will be stored.
+   <f:be.buttons.shortcut />
+
+Output::
+
+   Shortcut button as known from the TYPO3 backend.
+   By default the current page id, module name and all module arguments will be stored
+
+Explicitly set parameters to be stored in the shortcut::
+
+   <f:be.buttons.shortcut getVars="{0: 'M', 1: 'myOwnPrefix'}" setVars="{0: 'function'}" />
+
+Output::
+
+   Shortcut button as known from the TYPO3 backend.
+   This time only the specified GET parameters and SET[]-settings will be stored.
+
 Note:
 Normally you won't need to set getVars & setVars parameters in Extbase modules
-</output>
 
 Arguments
 =========

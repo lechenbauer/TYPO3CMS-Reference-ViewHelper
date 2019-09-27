@@ -10,21 +10,24 @@ format.htmlspecialchars
 Applies htmlspecialchars() escaping to a value
 
 
-= Examples =
+Examples
+========
 
-<code title="default notation">
-<f:format.htmlspecialchars>{text}</f:format.htmlspecialchars>
-</code>
-<output>
-Text with & " ' < > * replaced by HTML entities (htmlspecialchars applied).
-</output>
+default notation::
 
-<code title="inline notation">
-{text -> f:format.htmlspecialchars(encoding: 'ISO-8859-1')}
-</code>
-<output>
-Text with & " ' < > * replaced by HTML entities (htmlspecialchars applied).
-</output>
+   <f:format.htmlspecialchars>{text}</f:format.htmlspecialchars>
+
+Output::
+
+   Text with & " ' < > * replaced by HTML entities (htmlspecialchars applied).
+
+inline notation::
+
+   {text -> f:format.htmlspecialchars(encoding: 'ISO-8859-1')}
+
+Output::
+
+   Text with & " ' < > * replaced by HTML entities (htmlspecialchars applied).
 
 Arguments
 =========

@@ -9,43 +9,50 @@ format.crop
 
 Use this view helper to crop the text between its opening and closing tags.
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<f:format.crop maxCharacters="10">This is some very long text</f:format.crop>
-</code>
-<output>
-This is...
-</output>
+Defaults::
 
-<code title="Custom suffix">
-<f:format.crop maxCharacters="17" append="&nbsp;[more]">This is some very long text</f:format.crop>
-</code>
-<output>
-This is some&nbsp;[more]
-</output>
+   <f:format.crop maxCharacters="10">This is some very long text</f:format.crop>
 
-<code title="Don't respect word boundaries">
-<f:format.crop maxCharacters="10" respectWordBoundaries="false">This is some very long text</f:format.crop>
-</code>
-<output>
-This is so...
-</output>
+Output::
 
-<code title="Don't respect HTML tags">
-<f:format.crop maxCharacters="28" respectWordBoundaries="false" respectHtml="false">This is some text with <strong>HTML</strong> tags</f:format.crop>
-</code>
-<output>
-This is some text with <stro
-</output>
+   This is...
 
-<code title="Inline notation">
-{someLongText -> f:format.crop(maxCharacters: 10)}
-</code>
-<output>
-someLongText cropped after 10 characters...
+Custom suffix::
+
+   <f:format.crop maxCharacters="17" append="&nbsp;[more]">This is some very long text</f:format.crop>
+
+Output::
+
+   This is some&nbsp;[more]
+
+Don't respect word boundaries::
+
+   <f:format.crop maxCharacters="10" respectWordBoundaries="false">This is some very long text</f:format.crop>
+
+Output::
+
+   This is so...
+
+Don't respect HTML tags::
+
+   <f:format.crop maxCharacters="28" respectWordBoundaries="false" respectHtml="false">This is some text with <strong>HTML</strong> tags</f:format.crop>
+
+Output::
+
+   This is some text with <stro
+
+Inline notation::
+
+   {someLongText -> f:format.crop(maxCharacters: 10)}
+
+Output::
+
+   someLongText cropped after 10 characters...
+
 (depending on the value of {someLongText})
-</output>
 
 Arguments
 =========

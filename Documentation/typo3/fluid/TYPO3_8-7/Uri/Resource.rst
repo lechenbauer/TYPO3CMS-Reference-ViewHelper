@@ -9,15 +9,18 @@ uri.resource
 
 A view helper for creating URIs to resources.
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<link href="{f:uri.resource(path:'css/stylesheet.css')}" rel="stylesheet" />
-</code>
-<output>
-<link href="Resources/Packages/MyPackage/stylesheet.css" rel="stylesheet" />
+Defaults::
+
+   <link href="{f:uri.resource(path:'css/stylesheet.css')}" rel="stylesheet" />
+
+Output::
+
+   <link href="Resources/Packages/MyPackage/stylesheet.css" rel="stylesheet" />
+
 (depending on current package)
-</output>
 
 Arguments
 =========

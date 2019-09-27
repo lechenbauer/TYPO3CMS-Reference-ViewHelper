@@ -10,21 +10,24 @@ format.number
 Formats a number with custom precision, decimal point and grouped thousands.
 
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<f:format.number>423423.234</f:format.number>
-</code>
-<output>
-423,423.20
-</output>
+Defaults::
 
-<code title="With all parameters">
-<f:format.number decimals="1" decimalSeparator="," thousandsSeparator=".">423423.234</f:format.number>
-</code>
-<output>
-423.423,2
-</output>
+   <f:format.number>423423.234</f:format.number>
+
+Output::
+
+   423,423.20
+
+With all parameters::
+
+   <f:format.number decimals="1" decimalSeparator="," thousandsSeparator=".">423423.234</f:format.number>
+
+Output::
+
+   423.423,2
 
 Arguments
 =========

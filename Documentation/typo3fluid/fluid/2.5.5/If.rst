@@ -41,39 +41,43 @@ below).
     Will result true if {foo.bar}'s represented value equals 'stringToCompare'.
   </f:if>
 
-= Examples =
+Examples
+========
 
-<code title="Basic usage">
-<f:if condition="somecondition">
-  This is being shown in case the condition matches
-</f:if>
-</code>
-<output>
-Everything inside the <f:if> tag is being displayed if the condition evaluates to TRUE.
-</output>
+Basic usage::
 
-<code title="If / then / else">
-<f:if condition="somecondition">
-  <f:then>
-    This is being shown in case the condition matches.
-  </f:then>
-  <f:else>
-    This is being displayed in case the condition evaluates to FALSE.
-  </f:else>
-</f:if>
-</code>
-<output>
-Everything inside the "then" tag is displayed if the condition evaluates to TRUE.
-Otherwise, everything inside the "else"-tag is displayed.
-</output>
+   <f:if condition="somecondition">
+   This is being shown in case the condition matches
+   </f:if>
 
-<code title="inline notation">
-{f:if(condition: someCondition, then: 'condition is met', else: 'condition is not met')}
-</code>
-<output>
-The value of the "then" attribute is displayed if the condition evaluates to TRUE.
-Otherwise, everything the value of the "else"-attribute is displayed.
-</output>
+Output::
+
+   Everything inside the <f:if> tag is being displayed if the condition evaluates to TRUE.
+
+If / then / else::
+
+   <f:if condition="somecondition">
+      <f:then>
+         This is being shown in case the condition matches.
+      </f:then>
+      <f:else>
+         This is being displayed in case the condition evaluates to FALSE.
+      </f:else>
+   </f:if>
+
+Output::
+
+   Everything inside the "then" tag is displayed if the condition evaluates to TRUE.
+   Otherwise, everything inside the "else"-tag is displayed.
+
+inline notation::
+
+   {f:if(condition: someCondition, then: 'condition is met', else: 'condition is not met')}
+
+Output::
+
+   The value of the "then" attribute is displayed if the condition evaluates to TRUE.
+   Otherwise, everything the value of the "else"-attribute is displayed.
 
 Arguments
 =========

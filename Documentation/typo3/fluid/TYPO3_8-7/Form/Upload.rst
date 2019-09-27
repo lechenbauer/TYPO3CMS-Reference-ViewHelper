@@ -10,14 +10,16 @@ form.upload
 A view helper which generates an <input type="file"> HTML element.
 Make sure to set enctype="multipart/form-data" on the form!
 
-= Examples =
+Examples
+========
 
-<code title="Example">
-<f:form.upload name="file" />
-</code>
-<output>
-<input type="file" name="file" />
-</output>
+Example::
+
+   <f:form.upload name="file" />
+
+Output::
+
+   <input type="file" name="file" />
 
 Arguments
 =========

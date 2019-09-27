@@ -37,22 +37,23 @@ COMPATIBLE OUTPUT!
 USE WITH CARE! WILL PRESERVE EVERYTHING RENDERED, INCLUDING
 POTENTIALLY SENSITIVE DATA CONTAINED IN OUTPUT!
 
-= Examples =
+Examples
+========
 
-<code title="Usage and effect">
-<f:if condition="{var}">Is always evaluated also when compiled</f:if>
-<f:cache.static>
-    <f:if condition="{othervar}">
-        Will only be evaluated once and this output will be
-        cached as a static string with no logic attached.
-        The compiled template will not contain neither the
-        condition ViewHelperNodes or the variable accessor
-        that are used inside this node.
-    </f:if>
-</f:cache.static>
-This is also evaluated when compiled (static node is closed)
-<f:if condition="{var}">Also evaluated; is outside static node</f:if>
-</code>
+Usage and effect::
+
+   <f:if condition="{var}">Is always evaluated also when compiled</f:if>
+   <f:cache.static>
+      <f:if condition="{othervar}">
+         Will only be evaluated once and this output will be
+         cached as a static string with no logic attached.
+         The compiled template will not contain neither the
+         condition ViewHelperNodes or the variable accessor
+         that are used inside this node.
+      </f:if>
+   </f:cache.static>
+   This is also evaluated when compiled (static node is closed)
+   <f:if condition="{var}">Also evaluated; is outside static node</f:if>
 
 Arguments
 =========

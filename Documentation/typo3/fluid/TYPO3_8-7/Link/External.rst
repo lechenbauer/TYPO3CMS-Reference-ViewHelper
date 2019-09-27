@@ -9,21 +9,24 @@ link.external
 
 A view helper for creating links to external targets.
 
-= Examples =
+Examples
+========
 
-<code>
-<f:link.external uri="http://www.typo3.org" target="_blank">external link</f:link.external>
-</code>
-<output>
-<a href="http://www.typo3.org" target="_blank">external link</a>
-</output>
+::
 
-<code title="custom default scheme">
-<f:link.external uri="typo3.org" defaultScheme="ftp">external ftp link</f:link.external>
-</code>
-<output>
-<a href="ftp://typo3.org">external ftp link</a>
-</output>
+   <f:link.external uri="http://www.typo3.org" target="_blank">external link</f:link.external>
+
+Output::
+
+   <a href="http://www.typo3.org" target="_blank">external link</a>
+
+custom default scheme::
+
+   <f:link.external uri="typo3.org" defaultScheme="ftp">external ftp link</f:link.external>
+
+Output::
+
+   <a href="ftp://typo3.org">external ftp link</a>
 
 Arguments
 =========

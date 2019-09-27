@@ -9,40 +9,44 @@ be.security.ifHasRole
 
 This view helper implements an ifHasRole/else condition for BE users/groups.
 
-= Examples =
+Examples
+========
 
-<code title="Basic usage">
-<f:be.security.ifHasRole role="Administrator">
-This is being shown in case the current BE user belongs to a BE usergroup (aka role) titled "Administrator" (case sensitive)
-</f:be.security.ifHasRole>
-</code>
-<output>
-Everything inside the <f:ifHasRole> tag is being displayed if the logged in BE user belongs to the specified role.
-</output>
+Basic usage::
 
-<code title="Using the usergroup uid as role identifier">
-<f:be.security.ifHasRole role="1">
-This is being shown in case the current BE user belongs to a BE usergroup (aka role) with the uid "1"
-</f:be.security.ifHasRole>
-</code>
-<output>
-Everything inside the <f:ifHasRole> tag is being displayed if the logged in BE user belongs to the specified role.
-</output>
+   <f:be.security.ifHasRole role="Administrator">
+      This is being shown in case the current BE user belongs to a BE usergroup (aka role) titled "Administrator" (case sensitive)
+   </f:be.security.ifHasRole>
 
-<code title="IfRole / then / else">
-<f:be.security.ifHasRole role="Administrator">
-<f:then>
-This is being shown in case you have the role.
-</f:then>
-<f:else>
-This is being displayed in case you do not have the role.
-</f:else>
-</f:be.security.ifHasRole>
-</code>
-<output>
-Everything inside the "then" tag is displayed if the logged in BE user belongs to the specified role.
-Otherwise, everything inside the "else"-tag is displayed.
-</output>
+Output::
+
+   Everything inside the <f:ifHasRole> tag is being displayed if the logged in BE user belongs to the specified role.
+
+Using the usergroup uid as role identifier::
+
+   <f:be.security.ifHasRole role="1">
+      This is being shown in case the current BE user belongs to a BE usergroup (aka role) with the uid "1"
+   </f:be.security.ifHasRole>
+
+Output::
+
+   Everything inside the <f:ifHasRole> tag is being displayed if the logged in BE user belongs to the specified role.
+
+IfRole / then / else::
+
+   <f:be.security.ifHasRole role="Administrator">
+      <f:then>
+         This is being shown in case you have the role.
+      </f:then>
+      <f:else>
+         This is being displayed in case you do not have the role.
+      </f:else>
+   </f:be.security.ifHasRole>
+
+Output::
+
+   Everything inside the "then" tag is displayed if the logged in BE user belongs to the specified role.
+   Otherwise, everything inside the "else"-tag is displayed.
 
 Arguments
 =========

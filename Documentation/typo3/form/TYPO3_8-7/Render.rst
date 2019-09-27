@@ -12,10 +12,10 @@ Main Entry Point to render a Form into a Fluid Template
 Usage
 =====
 
-<pre>
-{namespace formvh=TYPO3\CMS\Form\ViewHelpers}
-<formvh:render factoryClass="NameOfYourCustomFactoryClass" />
-</pre>
+::
+
+   {namespace formvh=TYPO3\CMS\Form\ViewHelpers}
+   <formvh:render factoryClass="NameOfYourCustomFactoryClass" />
 
 
 Scope: frontend

@@ -9,7 +9,8 @@ be.infobox
 
 View helper for rendering a styled content infobox markup.
 
-= States =
+States
+======
 
 The Infobox provides different context sensitive states that
 can be used to provide an additional visual feedback to the
@@ -24,15 +25,16 @@ meaningful value from the following list.
 1: Warnings
 2: Error
 
-= Examples =
+Examples
+========
 
-<code title="Simple">
-<f:be.infobox title="Message title">your box content</f:be.infobox>
-</code>
+Simple::
 
-<code title="All options">
-<f:be.infobox title="Message title" message="your box content" state="-2" iconName="check" disableIcon="true" />
-</code>
+   <f:be.infobox title="Message title">your box content</f:be.infobox>
+
+All options::
+
+   <f:be.infobox title="Message title" message="your box content" state="-2" iconName="check" disableIcon="true" />
 
 Arguments
 =========

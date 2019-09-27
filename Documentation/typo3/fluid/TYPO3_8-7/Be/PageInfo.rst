@@ -10,14 +10,16 @@ be.pageInfo
 View helper which return page info icon as known from TYPO3 backend modules
 Note: This view helper is experimental!
 
-= Examples =
+Examples
+========
 
-<code>
-<f:be.pageInfo />
-</code>
-<output>
-Page info icon with context menu
-</output>
+::
+
+   <f:be.pageInfo />
+
+Output::
+
+   Page info icon with context menu
 
 Arguments
 =========

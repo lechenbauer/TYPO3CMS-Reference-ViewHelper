@@ -9,14 +9,16 @@ object.arrayValueByKey
 
 View helper which allows you to access a key in an array.
 
-= Examples =
+Examples
+========
 
-<code title="Defaults">
-<i:object.key array="{array}" key="{key}" />
-</code>
-<output>
-The key in the array, if it exists, otherwise an empty string.
-</output>
+Defaults::
+
+   <i:object.key array="{array}" key="{key}" />
+
+Output::
+
+   The key in the array, if it exists, otherwise an empty string.
 
 Arguments
 =========
