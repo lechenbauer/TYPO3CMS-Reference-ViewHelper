@@ -36,7 +36,7 @@ value of key "key1" in the current website language
 </code>
 <output>
 value of key "argumentsKey" in the current website language
-with "%1" and "%2" are replaced by "dog" and "fox" (printf)
+with "%1$s" and "%2$s" are replaced by "dog" and "fox" (printf)
 if the key is not found, the output is "default value"
 </output>
 
